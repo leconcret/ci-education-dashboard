@@ -165,6 +165,17 @@ Donnees publiques du Ministere
 - Projection des effectifs jusqu'en 2030
 - Tableau de bord interactif accessible en ligne
 
+- 
+## Compétences démontrées
+
+- Data Cleaning avec Pandas
+- Data Visualisation avec Plotly
+- Développement de Dashboard avec Streamlit
+- Analyse de données éducatives
+- Déploiement Cloud
+- Gestion de version avec Git et GitHub
+- Documentation de projet
+
 ## Perspectives
 
 * Integration Hadoop/HDFS
