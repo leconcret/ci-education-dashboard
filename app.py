@@ -29,14 +29,16 @@ st.title("🇨🇮 Observatoire National de l'Éducation")
 st.caption("Plateforme décisionnelle basée sur Python, Hadoop, Hive et Streamlit — Côte d'Ivoire 2008-2025")
 st.markdown("Ce tableau de bord transforme des données publiques éducatives en indicateurs d'aide à la décision.")
 
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
-    "Vue exécutive",
-    "Évolution du système",
-    "Qualité éducative",
-    "BAC 2022",
-    "Prévisions",
-    "Données & pipeline"
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+"Vue exécutive",
+"Évolution du système",
+"Qualité éducative",
+"BAC 2022",
+"Prévisions",
+"Données & pipeline",
+"À propos"
 ])
+
 
 with tab1:
     st.subheader("📌 Vue exécutive")
@@ -60,24 +62,33 @@ with tab1:
 
     st.subheader("🎯 Indice synthétique de suivi éducatif")
     score = 78
-    st.progress(score / 100)
-    st.metric("Score Education CI", f"{score}/100")
 
-    colA, colB = st.columns(2)
+st.progress(score / 100)
 
-    with colA:
-        fig = px.line(
-            df_filtre,
-            x="annee_debut",
-            y="eleves",
-            color="niveau",
-            markers=True,
-            title="Évolution des effectifs scolaires",
-            labels={"annee_debut": "Année", "eleves": "Élèves"}
-        )
-        st.plotly_chart(fig, width="stretch")
+st.metric(
+    "Indice synthétique de suivi éducatif",
+    f"{score}/100"
+)
 
-    with colB:
+st.caption(
+    "Version pilote : indice provisoire qui sera automatiquement recalculé à mesure que de nouveaux jeux de données publics seront intégrés."
+)
+
+colA, colB = st.columns(2)
+
+with colA:
+    fig = px.line(
+        df_filtre,
+        x="annee_debut",
+        y="eleves",
+        color="niveau",
+        markers=True,
+        title="Évolution des effectifs scolaires",
+        labels={"annee_debut": "Année", "eleves": "Élèves"}
+    )
+    st.plotly_chart(fig, width="stretch")
+
+with colB:
         recent = df_filtre.sort_values("annee_debut").tail(6)
         fig = px.bar(
             recent,
@@ -236,3 +247,74 @@ Streamlit Dashboard
         file_name="education_ci_dashboard_export.csv",
         mime="text/csv"
     )
+
+with tab7:
+
+    st.header("À propos de la plateforme")
+
+    st.markdown("""
+### CI Observatoire National de l'Éducation
+
+Le CI Observatoire National de l'Éducation est une plateforme d'analyse et de visualisation des données éducatives publiques de Côte d'Ivoire.
+
+Son objectif est de transformer les données ouvertes en indicateurs fiables, accessibles et exploitables afin de faciliter la compréhension du système éducatif ivoirien et de contribuer à une prise de décision fondée sur les données.
+
+Cette plateforme est conçue comme un observatoire dynamique. Elle sera régulièrement enrichie à mesure que de nouvelles données publiques officielles seront publiées et mises à disposition.
+""")
+
+    st.divider()
+
+    st.subheader("Sources des données")
+
+    st.markdown("""
+**Portail officiel des données ouvertes de Côte d'Ivoire**  
+https://data.gouv.ci/
+
+**Jeux de données actuellement exploités :**
+
+- Statistiques de l'enseignement primaire entre 2010 et 2025
+- Statistiques de l'enseignement secondaire entre 2008 et 2024
+- Classement des établissements au Baccalauréat 2022 par ordre de mérite
+
+Toutes les données utilisées dans cette plateforme proviennent de sources publiques officielles.
+""")
+
+    st.divider()
+
+    st.subheader("Technologies utilisées")
+
+    st.markdown("""
+**Technologies actuellement utilisées :**
+
+- Python
+- Pandas
+- Plotly
+- Streamlit
+- Git
+- GitHub
+- Streamlit Community Cloud
+
+**Technologies intégrées ou prévues :**
+
+- Hadoop
+- HDFS
+- Apache Hive
+- Apache Spark
+- SQL
+- Power BI
+- Tableau
+- Machine Learning
+- Intelligence Artificielle
+""")
+
+    st.divider()
+
+    st.subheader("Auteur")
+
+    st.markdown("""
+**ANON Amoncou Diom Sebastien**
+
+Data Engineer | Data Analyst | Data & AI Enthusiast
+
+Passionné par l'analyse des données, le Big Data, l'Intelligence Artificielle et la valorisation des données publiques au service du développement et de la prise de décision.
+""")
