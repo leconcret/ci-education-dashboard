@@ -2,6 +2,26 @@
 
 Plateforme decisionnelle basee sur Python, Pandas, Plotly et Streamlit pour l'analyse des donnees publiques de l'education en Cote d'Ivoire.
 
+## Application en ligne
+
+Tester le tableau de bord :
+
+https://observatoire-education-ci.streamlit.app
+
+
+## Valeur ajoutee
+
+Ce projet transforme des donnees educatives ouvertes de Cote d'Ivoire en indicateurs visuels facilitant l'analyse, le suivi et la prise de decision.
+
+Le tableau de bord permet notamment :
+
+* Le suivi de l'evolution des effectifs scolaires
+* L'analyse de la parite filles-garcons
+* Le suivi du redoublement
+* L'analyse des performances au BAC
+* Les projections educatives a moyen terme
+
+
 ## Objectif
 
 Transformer les donnees educatives ouvertes en indicateurs d'aide a la decision pour :
@@ -114,6 +134,31 @@ EduDataCI/
         |-- Bac2022.jpeg
         `-- prevision2030.jpeg
 ```
+
+## Architecture du projet
+
+```text
+Donnees publiques du Ministere
+            |
+            v
+      Nettoyage ETL
+      (Python/Pandas)
+            |
+            v
+   Dataset consolide
+            |
+            v
+ Analyse et indicateurs
+   (Plotly/Pandas)
+            |
+            v
+ Dashboard interactif
+      (Streamlit)
+            |
+            v
+   Aide a la decision
+```
+
 
 ## Perspectives
 
