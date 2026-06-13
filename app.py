@@ -314,7 +314,7 @@ Toutes les données utilisées dans cette plateforme proviennent de sources publ
     st.markdown("""
 **ANON Amoncou Diom Sebastien**
 
-Data Engineer | Data Analyst | Data & AI Enthusiast
+Data Engineer & Data Scientist
 
 Passionné par l'analyse des données, le Big Data, l'Intelligence Artificielle et la valorisation des données publiques au service du développement et de la prise de décision.
 """)
