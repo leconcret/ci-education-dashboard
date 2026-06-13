@@ -174,7 +174,7 @@ Donnees publiques du Ministere
 - Analyse de données éducatives
 - Déploiement Cloud
 - Gestion de version avec Git et GitHub
-- Documentation de projet
+- Documentation technique professionnelle
 
 ## Perspectives
 
