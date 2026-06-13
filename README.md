@@ -4,10 +4,8 @@ Plateforme decisionnelle basee sur Python, Pandas, Plotly et Streamlit pour l'an
 
 ## Application en ligne
 
-Tester le tableau de bord :
-
+Lien public :
 https://observatoire-education-ci.streamlit.app
-
 
 ## Valeur ajoutee
 
@@ -159,6 +157,13 @@ Donnees publiques du Ministere
    Aide a la decision
 ```
 
+## Résultats clés
+
+- Plus de 5 millions d'élèves analysés
+- Plus de 20 000 établissements suivis
+- Analyse nationale du BAC 2022
+- Projection des effectifs jusqu'en 2030
+- Tableau de bord interactif accessible en ligne
 
 ## Perspectives
 
