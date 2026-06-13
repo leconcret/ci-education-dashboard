@@ -56,6 +56,25 @@ Transformer les donnees educatives ouvertes en indicateurs d'aide a la decision 
 * Analyse par DREN
 * Analyse par statut
 
+  
+## Sources de donnees
+
+Les donnees utilisees dans ce projet proviennent du portail officiel des donnees ouvertes de Cote d'Ivoire :  
+https://data.gouv.ci/
+
+Jeux de donnees actuellement exploites :
+
+- Statistiques de l'enseignement primaire entre 2010 et 2025  
+  https://data.gouv.ci/datasets/statistiques-de-lenseignement-primaire-entre-2008-et-2025
+
+- Statistiques de l'enseignement secondaire entre 2008 et 2024  
+  https://data.gouv.ci/datasets/statistiques-de-lenseignement-secondaire-entre-2008-et-2018
+
+- Classement des etablissements au Baccalaureat 2022 par ordre de merite  
+  https://data.gouv.ci/datasets/baccalaureat-2022-classement-des-etablissements-par-ordre-de-merite
+
+Toutes les donnees utilisees dans ce tableau de bord proviennent de sources publiques officielles. Les donnees restent la propriete de leurs organismes producteurs respectifs.
+
 ## Fonctionnalites
 
 ### Vue executive
