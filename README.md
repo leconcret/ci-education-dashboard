@@ -65,10 +65,10 @@ https://data.gouv.ci/
 Jeux de donnees actuellement exploites :
 
 - Statistiques de l'enseignement primaire entre 2010 et 2025  
-  https://data.gouv.ci/datasets/statistiques-de-lenseignement-primaire-entre-2008-et-2025
+  https://data.gouv.ci/datasets/statistiques-de-lenseignement-primaire-entre-2010-et-2025
 
 - Statistiques de l'enseignement secondaire entre 2008 et 2024  
-  https://data.gouv.ci/datasets/statistiques-de-lenseignement-secondaire-entre-2008-et-2018
+  https://data.gouv.ci/datasets/statistiques-de-lenseignement-secondaire-entre-2008-et-2024
 
 - Classement des etablissements au Baccalaureat 2022 par ordre de merite  
   https://data.gouv.ci/datasets/baccalaureat-2022-classement-des-etablissements-par-ordre-de-merite
