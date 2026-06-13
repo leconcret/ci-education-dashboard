@@ -125,3 +125,26 @@ Universite Felix Houphouet-Boigny (UFHB)
 Data and AI Enthusiast
 
 Passionne de Data Engineering, Big Data et Intelligence Artificielle.
+
+## Aperáu du Dashboard
+
+### Tableau de bord principal
+![Dashboard](docs/screenshots/dashboard-home.jpeg)
+
+### êvolution des effectifs scolaires
+![Evolution Eleves](docs/screenshots/evolution_eleve.jpeg)
+
+### êvolution des Çtablissements
+![Evolution Etablissements](docs/screenshots/evolution_etablissement.jpeg)
+
+### êvolution du redoublement
+![Evolution Redoublement](docs/screenshots/evolution_redoublement.jpeg)
+
+### êvolution du taux de filles
+![Evolution Taux Filles](docs/screenshots/evolution_taux_filles.jpeg)
+
+### Analyse BAC 2022
+![BAC2022](docs/screenshots/Bac2022.jpeg)
+
+### PrÇvision des effectifs Ö l'horizon 2030
+![Prevision2030](docs/screenshots/prevision2030.jpeg)
